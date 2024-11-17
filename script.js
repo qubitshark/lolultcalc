@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 championSelect.appendChild(option);
             }
         })
-        .catch(error => console.error('Error fetching champion data:', error));
+        .catch(error => console.error('error fetching champion data:', error));
 
     form.addEventListener('submit', event => {
         event.preventDefault();
@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const currentCooldown = baseCooldown * (1 - cooldownReduction);
 
-        resultDiv.textContent = `current Ultimate Cooldown: ${currentCooldown.toFixed(2)} seconds`;
+        resultDiv.textContent = `current ultimate cooldown: ${currentCooldown.toFixed(2)} seconds`;
     });
 });
+
+
+// fix teemo cd, tahm R 
