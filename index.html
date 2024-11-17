@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Cooldown Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ultimate Cooldown Calculator</h1>
+    <form id="cooldown-form">
+        <label for="ability-haste">Base Ability Haste:</label>
+        <input type="number" id="ability-haste" name="ability-haste" min="0" value="0" required>
+
+        <label for="champion">Champion:</label>
+        <select id="champion" name="champion" required>
+        </select>
+
+        <label for="level">Level:</label>
+        <input type="number" id="level" name="level" min="6" max="18" value="6" required>
+
+        <fieldset>
+            <legend>Ultimate Haste Sources:</legend>
+            <label>
+                <input type="checkbox" id="malignance" name="malignance">
+                Malignance
+            </label>
+            <label>
+                <input type="checkbox" id="ultimate-hunter" name="ultimate-hunter">
+                Ultimate Hunter
+            </label>
+            <label>
+                <input type="checkbox" id="hexplate" name="hexplate">
+                Experimental Hexplate
+            </label>
+        </fieldset>
+
+        <button type="submit">Calculate Cooldown</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
